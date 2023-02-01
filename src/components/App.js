@@ -1,5 +1,10 @@
-function App() {
-  return <div></div>;
-}
+import { RecipeList } from './RecipeList';
+import recipes from '../recipes.json';
 
-export default App;
+export const App = () => {
+  return (
+    <>
+      <RecipeList recipes={recipes} />
+    </>
+  );
+};
