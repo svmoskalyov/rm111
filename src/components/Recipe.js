@@ -2,7 +2,7 @@ import { BsAlarm } from 'react-icons/bs';
 import { HiOutlineChartPie, HiOutlineChartBar } from 'react-icons/hi';
 
 export const Recipe = ({
-  recipe: { name, image, time, servings, calories },
+  recipe: { name, image, time, servings, calories, difficulty },
 }) => {
   return (
     <div>
@@ -21,11 +21,7 @@ export const Recipe = ({
       </div>
       <div>
         <h3>Difficulty</h3>
-        <div>
-          <span>Easy</span>
-          <span>Medium</span>
-          <span>Hard</span>
-        </div>
+        <span>{difficulty}</span>
       </div>
     </div>
   );
